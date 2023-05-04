@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vintage Cameras 📸</title>
+    <style>
+      body {
+        background: #372948;
+        opacity: 80%;
+      }
+      h1 {
+        color: #ffcaca;
+        text-align: center;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        font-size: 52px;
+        font-weight: lighter;
+      }
+      h2 {
+        color: white;
+        text-align: center;
+        border: 1px solid #ffcaca;
+        margin: 50px auto;
+        background: linear-gradient(#ffcaca, #251b37);
+        padding: 15px;
+        font-size: 30px;
+        border-radius: 10px;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      }
+      button {
+        display: block;
+        margin: 0 auto;
+      }
+      p {
+        font-size: 18px;
+        color: white;
+        text-align: left;
+        line-height: 1.5;
+      }
+      button {
+        display: block;
+        margin: 80px auto;
+        background: #372948;
+        color: #ffecef;
+        font-size: 22px;
+        padding: 20px 50px;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 5px 5px 10px rgba(255, 202, 202, 0.3);
+        transition: all 150ms ease-in-out;
+        border: 4px solid #ffecef;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      }
+      button:hover {
+        background: #ffecef;
+        color: #372948;
+        opacity: 0.9;
+        cursor: pointer;
+        border: 4px solid #372948;
+      }
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 30px 60px;
+        background: black;
+        border-radius: 20px;
+        box-shadow: 5px 5px 100px rgba(255, 202, 202, 0.3);
+      }
+
+      .vintage-cam {
+        display: block;
+        margin: 20px 0 40px;
+        max-width: 100%;
+        border-radius: 15px;
+      }
+      .vintage-TXT {
+        font-family: "Courier New";
+        color: #ffecef;
+        font-size: 22px;
+
+        text-align: left;
+        line-height: 1.5;
+      }
+      .footer,
+      .MB-profile {
+        color: #ffecef;
+        font-size: 20px;
+        font-family: monospace;
+      }
+      .NFI {
+        color: #ffecef;
+        font-size: 20px;
+      }
+      .vintage-title {
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        line-height: 2;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>I love Cameras !</h1>
+      <h2>Especially Vintage Cameras</h2>
+      <hr />
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/049/256/original/vintageCam.png?1666124437"
+        class="vintage-cam"
+      />
+      <p class="vintage-TXT">
+        <span class="vintage-title"> <em>Vintage Photography:</em></span>
+        <br />
+        Refers to any photography shot with a non-digital camera, such as an
+        analog camera with a 35 mm film. However, vintage photography is shot
+        with modern equipment and processed to look at an aging process or
+        material in modern times.
+      </p>
+      <hr />
+      <p>
+        📝
+        <a
+          href="https://www.nfi.edu/vintage-photography/"
+          target="_blank"
+          class="NFI"
+        >
+          Learn from NFI</a
+        >
+      </p>
+      <button>📸 <strong>Order a Vintage Camera</strong></button>
+      <p class="footer">
+        Coded by
+        <a
+          href="https://www.shecodesfoundation.org/candidates/mariela-baron-venezuelan"
+          target="_blank"
+          class="MB-profile"
+        >
+          Mariela Baron
+        </a>
+      </p>
+    </div>
+  </body>
+
+  <script>
+    function numCamera() {
+      let num = prompt("How many vintage cameras would you like to order? ");
+      if (num > 1) {
+        alert(" 💵 They cost $" + num * 400 + ".");
+      } else {
+        if (num == 1) {
+          alert("💵 It costs $400.");
+        } else {
+          alert("❌ It is not a valid order.");
+        }
+      }
+    }
+    let btnOrder = document.querySelector("button");
+    btnOrder.addEventListener("click", numCamera);
+  </script>
+</html>
